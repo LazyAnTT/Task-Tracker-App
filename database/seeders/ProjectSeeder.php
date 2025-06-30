@@ -13,10 +13,12 @@ class ProjectSeeder extends Seeder
      */
     public function run(): void
     {
-        Project::factory(5)->create()->each(function ($project) {
-            Task::factory(3)->create([
-                'project_id' => $project->id,
-            ]);
-        });
+        if (Project::count() === 0) {
+            Project::factory(5)->create()->each(function ($project) {
+                Task::factory(3)->create([
+                    'project_id' => $project->id,
+                ]);
+            });
+        }
     }
 }
