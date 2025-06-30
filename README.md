@@ -28,4 +28,4 @@ npm run dev
 
 6) test
 
-I have managed to do can be seen in commit messages. Run out of time, because lost a lot of time on setting up front-end.
+Look at commit messages for status progress. Run out of time, because lost a lot of time on setting up front-end.
